@@ -25,9 +25,7 @@ def ventilator(cas):
 def vlhkost_a_teplota():
   sensor.measure()
   data=open('data.txt',"a")
-  vzduch_hodnoty.update({meranie:[sensor.humidity(),sensor.temperature(),aktualny_cas()]})
-  print(vzduch_hodnoty)
-  data.write("vzduch_hodnoty="+str(vzduch_hodnoty))
+  data.write("{vzduch_hodnoty_%d:" %meranie+str([sensor.humidity(),sensor.temperature(),aktualny_cas()])+"}")
   data.close()
 
 def cas():
@@ -47,12 +45,11 @@ def vlhkost_pody():
     list.append((1024-adc.read())/480)
   pin_vlhkost.duty(0)
   average=sum(list[5:])/5
-  vlhkost.update({meranie:[average,aktualny_cas()]})
-  print(vlhkost)
-  data.write("vlhkost="+str(vlhkost))
+  
+  data.write("{vlhkost_pody_%d:" %meranie+str([average,aktualny_cas()])+"}")
   data.close()
 
-while 1!=0:
+for i in range(10):
   meranie+=1
   vlhkost_pody()
   vlhkost_a_teplota()
