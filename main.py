@@ -9,7 +9,7 @@ zatvorit=machine.PWM(machine.Pin(4))
 otvorit=machine.PWM(machine.Pin(5))
 
 def vetranie(value):
-  if value>=93:
+  if value>=70:
     otvorit.duty(1024)
     utime.sleep(2)
     otvorit.duty(0)
