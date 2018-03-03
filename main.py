@@ -28,8 +28,7 @@ def aktualny_cas():
   
 def zavlaha(vlhkost):
   if vlhkost<=45:
-    print("pumpa")
-    #pump.duty(1024)
+    pump.duty(1024)
     utime.sleep(10)
     pump.duty(0)
   
