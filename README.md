@@ -49,9 +49,10 @@ Cieľom tohoto projektu bolo zostrojiť skleník ktorý by automaticky monitorov
 * **Pumpa** – Pumpa slúži na zalievanie rastlín v skleníku
 
 	* Zapojenie obvodu – Pumpa je zapojená cez tranzistor kvôli tomu aby vedela byt napojená vyššie napätie. Ovládací pin je pripojený na GPIO0
+	* Pripevnenie – Toto bolo obzvlášť náročne keďže keď je v zásobníku voda tak vďaka gravitácii vteká sama od seba do skleníka tomuto sa da zabrániť nejakým ventilom ja som zvolil ventil z Rajec fľaše. Ten je pripevnený sosákom na vývod z pumpy keďže pumpa nie je až tak výkonná a keby bol v opačnom smere tak by nevedela cez neho pretlačiť vodu. Pripevnený na pumpu je tavnou pištoľou a k stene nádoby tiež. Z druhej strany pumpy je L-profil ktorý slúži na dodatočnú oporu pumpy. Tento profil pochádza z konštrukcie CD mechaniky ale môžete použiť hocijaký iný.
 
 ![enter image description here](https://lh3.googleusercontent.com/24zDbNA_yHgCyV_NW9nskGBh6-zi1iVQvaoPinn-N9nQC0cpYbi40S7s22t29rp93-uxDf4AWhX2 "zosilovac")
-	* Pripevnenie – Toto bolo obzvlášť náročne keďže keď je v zásobníku voda tak vďaka gravitácii vteká sama od seba do skleníka tomuto sa da zabrániť nejakým ventilom ja som zvolil ventil z Rajec fľaše. Ten je pripevnený sosákom na vývod z pumpy keďže pumpa nie je až tak výkonná a keby bol v opačnom smere tak by nevedela cez neho pretlačiť vodu. Pripevnený na pumpu je tavnou pištoľou a k stene nádoby tiež. Z druhej strany pumpy je L-profil ktorý slúži na dodatočnú oporu pumpy. Tento profil pochádza z konštrukcie CD mechaniky ale môžete použiť hocijaký iný.
+
 
 ![enter image description here](https://lh3.googleusercontent.com/F4jLmmMrbDYRB9I3pNcS1QlnQTUdlH8wMORzTuQTtVB8Po_to9sqlnDKioONxsQXgJFEJO1nLyed "pumpa")
 
