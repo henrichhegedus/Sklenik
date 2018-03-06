@@ -73,15 +73,11 @@ Cieľom tohoto projektu bolo zostrojiť skleník ktorý by automaticky monitorov
 
 	* Získanie súčiastok – V mojom prípade som použil otváraciu mechaniku z CD mechaniky ktorú som z konštrukcie pomocou brúsky vyrezal. Využil som všetky prevody vrátane ozubeného pásika na vysúvajúcej sa časti a drážky v ktorej sa ozubený pásik hýbe. Taktiež som vybral z CD mechaniky motor ktorý slúžil na vysúvanie
 	
-	* Zapojenie obvodu – Obvod pre ovládanie a zatváranie bol trochu komplikovanejší a to z toho dôvodu že bolo treba meniť smer elektromotora a teda meniť smer prúdu ktorý cez neho prechádzal. Na toto slúžil H mostík. Ktorého obvod je vidno na obrázku.
+	* Zapojenie obvodu – Obvod pre ovládanie a zatváranie bol trochu komplikovanejší a to z toho dôvodu že bolo treba meniť smer elektromotora a teda meniť smer prúdu ktorý cez neho prechádzal. Na toto slúžil H mostík. Ktorého obvod je vidno na obrázku. Smer prúdu v motore sa dá ovládať dvoma pinmi podľa toho cez ktorý tečie prúd sa mení smer prúdu v motore. Dôležite je nikdy nemať pustene obidva piny lebo toto spôsobí skrat.
+	* 	 Pripevnenie – Všetky prevody boli pripevnene o skleník za pomoci tavnej pištole a ozubený pásik bol pripevnený o posuvne vetranie tiež pomocou tavnej pištole. Na obrázkoch je vidno ešte inú súčiastku medzi zeleným posúvačom a pásikom tá tam je iba kvôli tomu aby bola drážka v ktorej sa hýbe pásik v rovnakej výške ako spoj s posúvačom
 
-![enter image description here](https://lh3.googleusercontent.com/YvwrZr-zlwIzTSQwxhrjEuIB8BGUIt1GWPWYhvjQ6BvDPEu48x_LatNF32P8aonK1EG-8yEyTKAg "h_bridge")
 
-	
-
-		Smer prúdu v motore sa dá ovládať dvoma pinmi podľa toho cez ktorý tečie prúd sa mení smer prúdu v motore. Dôležite je nikdy nemať pustene obidva piny lebo toto spôsobí skrat.
-	
-	* Pripevnenie – Všetky prevody boli pripevnene o skleník za pomoci tavnej pištole a ozubený pásik bol pripevnený o posuvne vetranie tiež pomocou tavnej pištole. Na obrázkoch je vidno ešte inú súčiastku medzi zeleným posúvačom a pásikom tá tam je iba kvôli tomu aby bola drážka v ktorej sa hýbe pásik v rovnakej výške ako spoj s posúvačom
+![enter image description here](https://lh3.googleusercontent.com/YvwrZr-zlwIzTSQwxhrjEuIB8BGUIt1GWPWYhvjQ6BvDPEu48x_LatNF32P8aonK1EG-8yEyTKAg "h_bridge")				
 
 ![enter image description here](https://lh3.googleusercontent.com/4AnPzqfStfItPhK4s0Hs3CH6u-Qh9NX7UHoKJR8ZVM15HdG6rlO64cawKrKCzKzgoYQo90rBZmHT "vetranie")
 
