@@ -1,26 +1,26 @@
-from machine import Pin,PWM
+from machine import Pin
 import utime,machine,dht
 sensor=dht.DHT11(machine.Pin(2))
 meranie=0
-fan = machine.PWM(machine.Pin(15))
-pin_vlhkost = machine.PWM(machine.Pin(13))
-pump=machine.PWM(machine.Pin(0))
-zatvorit=machine.PWM(machine.Pin(4))
-otvorit=machine.PWM(machine.Pin(5))
+fan = Pin(15, Pin.OUT)
+pin_vlhkost = Pin(13, Pin.OUT)
+pump=Pin(0, Pin.OUT)
+zatvorit=Pin(4, Pin.OUT)
+otvorit=Pin(5, Pin.OUT)
 
 def vetranie(value):
   if value>=70:
-    otvorit.duty(1024)
+    otvorit.on()
     utime.sleep(2)
-    otvorit.duty(0)
+    otvorit.off()
     utime.sleep(1)
-    fan.duty(1024)
+    fan.on()
     utime.sleep(20)
-    fan.duty(0)
+    fan.off()
     utime.sleep(1)
-    zatvorit.duty(1024)
+    zatvorit.on()
     utime.sleep(2)
-    zatvorit.duty(0)
+    zatvorit.off()
     
 
 def aktualny_cas():  
@@ -28,9 +28,9 @@ def aktualny_cas():
   
 def zavlaha(vlhkost):
   if vlhkost<=45:
-    pump.duty(1024)
+    pump.on()
     utime.sleep(10)
-    pump.duty(0)
+    pump.off()
   
   
 
@@ -46,10 +46,10 @@ def vlhkost_pody():
   list=[]
   adc = machine.ADC(0)
   for i in range(10):
-    pin_vlhkost.duty(1024)
+    pin_vlhkost.on()
     utime.sleep(0.2)
     list.append((1024-adc.read())/315)
-  pin_vlhkost.duty(0)
+  pin_vlhkost.off()
   average=sum(list[5:])/5
   data.write(str({meranie:[average*100,aktualny_cas()]}))
   data.close()
