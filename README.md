@@ -87,3 +87,11 @@ Cieľom tohoto projektu bolo zostrojiť skleník ktorý by automaticky monitorov
 ## Záverečné fotky
 
 ![enter image description here](https://lh3.googleusercontent.com/HvkD0nDZwtYg70p26urvdZtbzFpb6hAIdvQeGyz16PAXo4c2ienFi8qX1X5qzizJpwnnVdQ7-A1i)![enter image description here](https://lh3.googleusercontent.com/OPLa16zjWXMzhu2MVFVEG1eQps8L25804rQ9WKu_SyGc3bDUGTyBd2Ko5tf2qPsey21rNoHwt4Lk)
+
+## Návrhy na zlepšenie
+* Nastaviť NodeMCU tak aby medzi meraniami šlo do spánku aby sa obmedzila spotreba energie
+* Napájanie zo solárneho panela
+* Merať množstvo vody v zásobniku pomocou elektrickej kapacity
+	* Poslať mail keď hladina vody klesne pod určitú uroveň
+* Senzor intenzity slnečného žiarenia
+* Dokurovanie skleníka v zimných mesiacoch
